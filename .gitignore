@@ -1,0 +1,19 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+build/
+dist/
+*.egg-info/
+
+# Generated documents and local article drafts.
+/*.docx
+/本周GitHub热门项目推荐.md
+
+# Local image assets are intentionally not part of the initial OSS release.
+/assets/
