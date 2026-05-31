@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "github-weekly-feishu"
+version = "0.1.0"
+description = "Convert GitHub weekly Markdown notes into Feishu and Word friendly DOCX files."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "dani-alves-5958" }
+]
+keywords = ["markdown", "docx", "feishu", "github-weekly", "newsletter"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Office/Business :: Office Suites",
+  "Topic :: Text Processing :: Markup :: Markdown",
+]
+dependencies = [
+  "python-docx>=1.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/dani-alves-5958/github-weekly-feishu"
+Repository = "https://github.com/dani-alves-5958/github-weekly-feishu"
+Issues = "https://github.com/dani-alves-5958/github-weekly-feishu/issues"
+
+[project.scripts]
+github-weekly-feishu = "github_weekly_feishu.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
